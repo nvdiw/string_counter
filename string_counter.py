@@ -24,7 +24,12 @@ for i in lst_s :
 # print(d_word)
 # print(d_letter)
 
+d = {
+    'd_letter' : d_letter,
+    'd_word' : d_word
+}
+
+
 with open('D:\python_projects\Python\Training\string_counter\string_counter.json' , 'w') as f :
-    json.dump(d_word , f , indent=2 , sort_keys=True)
-    json.dump(d_letter , f , indent=2)
+    json.dump(d , f , indent=4 , sort_keys=True)
     print('string_counter.json created')
